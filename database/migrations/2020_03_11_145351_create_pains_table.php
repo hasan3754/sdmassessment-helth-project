@@ -15,14 +15,14 @@ class CreatePainsTable extends Migration
     {
         Schema::create('pains', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Thoracic_Spine');
-            $table->string('Lumber_Spine');
-            $table->string('Hip');
-            $table->string('Sij');
-            $table->string('Knee');
-            $table->string('Ankle');
-            $table->string('Cervical_Spine');
-            $table->string('Shoulder');           
+            $table->string('Thoracic_Spine')->default('null');
+            $table->string('Lumber_Spine')->default('null');
+            $table->string('Hip')->default('null');
+            $table->string('Sij')->default('null');
+            $table->string('Knee')->default('null');
+            $table->string('Ankle')->default('null');
+            $table->string('Cervical_Spine')->default('null');
+            $table->string('Shoulder')->default('null');           
             $table->timestamps();
         });
     }

@@ -15,9 +15,9 @@ class CreateStrengthTestsTable extends Migration
     {
         Schema::create('strength_tests', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Muscles_Groups');
-            $table->string('MMT_right_or_left');
-            $table->string('Rating');
+            $table->string('Muscles_Groups')->default('null');
+            $table->string('MMT_right_or_left')->default('null');
+            $table->string('Rating')->default('null');
             $table->biginteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('patients');
             $table->timestamps();

@@ -115,7 +115,7 @@
 
 <form method="post" action="{{URL::to('/posture')}}" enctype="multipart/form-data">
     {{ csrf_field() }}
-    Posture and Functional Assessment:
+   <h3> Posture and Functional Assessment:</h3>
   <table>
   <tr>
     Standing
@@ -209,14 +209,14 @@
           
           </table>
   
-  
-  
-  <h3>Pain and movement limitations</h3>
-  
+        </div>
   
   
   
   
+  
+  
+        <h3>Pain and movement limitations</h3>
     <div class="form-row">
         <div class="form-group col-md-12">
           <label for="inputEmail4">Thoracic Spine</label>

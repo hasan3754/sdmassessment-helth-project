@@ -15,12 +15,12 @@ class CreatePosturesTable extends Migration
     {
         Schema::create('postures', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('standing');
-            $table->string('pelvic_tilt');
-            $table->string('rib_xipi_sternum');
-            $table->string('sitting');
-            $table->string('transition');
-            $table->string('bed_mobility');
+            $table->string('standing')->default('null');
+            $table->string('pelvic_tilt')->default('null');
+            $table->string('rib_xipi_sternum')->default('null');
+            $table->string('sitting')->default('null');
+            $table->string('transition')->default('null');
+            $table->string('bed_mobility')->default('null');
             $table->biginteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('patients');
             $table->timestamps();

@@ -35,7 +35,7 @@ class PatientController extends Controller
         $patient->save();
 
         $data=patient::all()->last()->id;
-        return view('create',compact(['data']));
+        return view('next',compact(['data']));
 
 
     }
