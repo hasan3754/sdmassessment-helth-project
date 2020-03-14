@@ -31,11 +31,14 @@ class PatientController extends Controller
         $patient->Referral_Diagnosis= request('Referral');
         $patient->Chief_Compliant = request('chief_compliant');
         $patient->HPC = request('HPC');
-        $patient->Duration_of_Symptom= request('Duration_of_Symptoms');
+        $patient->Days= request('Days');
+        $patient->Months= request('Months');
+        $patient->Years= request('Years');
         $patient->save();
 
         $data=patient::all()->last()->id;
-        return view('next',compact(['data']));
+        $newdata=patient::all()->last();
+        return view('next',compact(['newdata']));
 
 
     }

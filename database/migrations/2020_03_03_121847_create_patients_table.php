@@ -28,7 +28,9 @@ class CreatePatientsTable extends Migration
             $table->string('Referral_Diagnosis');
             $table->string('Chief_Compliant');
             $table->string('HPC');
-            $table->string('Duration_of_Symptom');
+            $table->string('Days');
+            $table->string('Months');
+            $table->string('Years');
             $table->timestamps();
         });
     }

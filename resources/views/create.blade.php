@@ -40,13 +40,18 @@
           <label for="inputCit">Name</label>
           <input type="text" name="Name" class="form-control" id="inputCit">
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-2">
           <label for="inputCit">Age</label>
           <input type="text" name="Age" class="form-control" id="inputCit">
         </div>
-        <div class="form-group col-md-2">
-          <label for="inputZip">Gender</label>
-          <input type="text" name="Gender" class="form-control" id="inputZip">
+        <div class="form-group col-md-4">
+          <label >Gender</label>
+          <select id="ddlPassport" name="Gender">
+            <option  value="Please select">Please select</option>
+            <option  value="Male">Male</option>
+            <option  value="Female">Female</option>
+
+        </select>
         </div>
       </div>
       <div class="form-row">
@@ -55,8 +60,13 @@
           <input type="text" name="Address" class="form-control" id="inputEmail4" placeholder="">
         </div>
         <div class="form-group col-md-6">
-          <label for="inputPassword4">Occupation/Stress</label>
-          <input type="text" name="Occupation" class="form-control" id="inputPassword4" placeholder="">
+          <label >Occupation</label>
+          <select id="ddlPassport" name="Occupation">
+            <option  value="Please select">Please select</option>
+            <option  value="Male">Male</option>
+            <option  value="Female">Female</option>
+
+        </select>
         </div>
       </div>
           <div class="form-row">
@@ -79,10 +89,24 @@
       <label for="inputAddres">HPC</label>
       <input type="text" name="HPC" class="form-control" id="inputAddres" placeholder="">
     </div>
-    <div class="form-group">
-      <label for="inputAddress2">Duration of Symptoms</label>
-      <input type="text"name="Duration_of_Symptoms" class="form-control" id="inputAddress2" placeholder="">
+    <label for="inputAddress2">Duration of Symptom</label>
+    <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputAddress2">Days</label>
+      <input type="text"name="Days" class="form-control" id="inputAddress2" placeholder="">
+
     </div>
+    <div class="form-group col-md-4">
+      <label for="inputAddress2">Months</label>
+      <input type="text"name="Months" class="form-control" id="inputAddress2" placeholder="">
+
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputAddress2">Years</label>
+      <input type="text"name="Years" class="form-control" id="inputAddress2" placeholder="">
+
+    </div>
+  </div>
 
 
     <button type="submit" value="submit" class="btn btn-primary">Submit</button>

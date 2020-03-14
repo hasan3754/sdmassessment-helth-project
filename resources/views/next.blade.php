@@ -12,6 +12,14 @@
 <body>
 <img src="{{asset('image.jpg')}}" alt="Planets" usemap="#planetmap">
 
+    <div class="portfolioitem notVisible" >
+        <h1>{{$newdata->Registration_ID_No}}</h1>
+        <h1>{{$newdata->Name}}</h1>
+        <h1>{{$newdata->Gender}}</h1>
+        <h1>{{$newdata->Age}}</h1>
+        <h1>{{$newdata->Contact_No}}</h1>
+    </div>
+
 <map name="planetmap">
     <area shape="poly" coords="449, 429, 408, 394, 388, 362, 404, 372, 434, 396, 460, 415" href="sun.htm" />
     <area shape="poly" coords="458, 406, 410, 374, 392, 351, 425, 367, 464, 394" href="sun.htm" />
