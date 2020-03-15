@@ -119,6 +119,8 @@
     <area shape="poly" coords="381, 363, 400, 401, 426, 444, 455, 499, 455, 465, 439, 426, 415, 398, 388, 356" href="sun.htm" />
 </map>
 
+<hr>
+
 
 
 <form method="post" action="{{URL::to('/posture')}}" enctype="multipart/form-data">
@@ -222,7 +224,7 @@
   
   
   
-  
+        <hr>
   
         <h3>Pain and movement limitations</h3>
     <div class="form-row">
@@ -269,26 +271,26 @@
   
   
   
+    <hr>
   
   
-  
-    <h3>lets take a Passive strech test</h3>
+    <h3>Passive strech test</h3>
   <select id="ddlPassport" name="myname">
-      <option  value="Please select">Please select</option>
+       <option  value="Ankle Dorsiflexor">Ankle Dorsiflexor</option>
+      <option  value="Ankle pl.flexor">Ankle pl.flexor</option>
+      <option  value="Gluteusmeius">Gluteusmeius</option>
+      <option  value="Gluteus Maximus">Gluteus Maximus</option>
+      <option  value="Gluteusminimus">Gluteusminimus</option>
+      <option  value="Hamstring">Hamstring</option>
+      <option  value="Hip Adductor">Hip Adductor</option>
       <option  value="Lumber Extensor">Lumber Extensor</option>
       <option  value="Lumber Flexor">Lumber Flexor</option>
-       <option  value="Qolu">Qolu</option>
       <option  value="lliposoas">lliposoas</option>
+      <option  value="Piriformis">Piriformis</option>
+      <option  value="Please select">Please select</option>
+       <option  value="Qolu">Qolu</option>      
        <option  value="Quads">Quads</option>
-      <option  value="Hamstring">Hamstring</option>
-       <option  value="Gluteusminimus">Gluteusminimus</option>
-      <option  value="Ankle Dorsiflexor">Ankle Dorsiflexor</option>
-       <option  value="Ankle pl.flexor">Ankle pl.flexor</option>
-      <option  value="Gluteusmeius">Gluteusmeius</option>
-       <option  value="Piriformis">Piriformis</option>
-      <option  value="Gluteus Maximus">Gluteus Maximus</option>
-      <option  value="Hip Adductor">Hip Adductor</option>
-  </select>
+       </select>
   
   <div id="dvPassport" style="display: none">
     <input type="radio" name="bedStatus" id="allot"  value="right">Right
@@ -329,27 +331,28 @@
     </tr>
   
   </table>
+  </div>
   
   
     
   
   
+  <hr>
   
   
-  
-  
-  <span>lets take a Strength test</span>
+  <div>
+  <h3>Strength test</h3>
   <select id="aPassport" name="a">
     <option  value="Please select">Please select</option>
-    <option  value="lliposoas">lliposoas</option>
-    <option  value="Rectus & Tranverse Ab.">Rectus & Tranverse Ab.</option>
-   <option  value="QoL&Piriformis">QoL&Piriformis</option>
-    <option  value="Gluteus Medius">Gluteus Medius</option>
-   <option  value="Lumber extensor(core)">Lumber extensor(core)</option>
+    <option  value="Gluteus Medius">Gluteus Medius</option>  
     <option  value="Gluteus Maximus">Gluteus Maximus</option>
    <option  value="Hamstring">Hamstring</option>
+    <option  value="lliposoas">lliposoas</option>
+    <option  value="Lumber extensor(core)">Lumber extensor(core)</option>
+    <option  value="Pelvic Floor">Pelvic Floor</option>
+    <option  value="QoL&Piriformis">QoL&Piriformis</option>
     <option  value="Quardiceps">Quardiceps</option>
-   <option  value="Pelvic Floor">Pelvic Floor</option>
+    <option  value="Rectus & Tranverse Ab.">Rectus & Tranverse Ab.</option>  
   </select>
   
   <div id="bPassport" style="display: none">
@@ -377,10 +380,201 @@
     <td><input type="radio" name="c" id="transfer" value="5"></td>
     
   </tr>
+</div>
   
   </table>
+
+  </div>
+
+
+
+
+  <hr>
+  
+  
+  
+  <h3>Neurological Examination of affected Part or mostly affected part only</h3>
+  <select id="gPassport" name="a">
+    <option  value="L2">L2</option>
+    <option  value="L3">L3</option>  
+    <option  value="L4">L4</option>
+   <option  value="L5">L5</option>
+    <option  value="S1">S1</option> 
+  </select>
+  
+  <div id="hPassport" style="display: none">
+    <h5>MMT</h5>
+  <input type="radio" name="S" id="allot"  value="Sensory">Sensory
+  <input type="radio" name="S" id="transfer" value="Motor">Motor
+  </div>
+  
+  <div id="ePassport" style="display: none">
+  <table>
+  <tr>
+    <th>0</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+  </tr>
+  <tr>
+    <td><input type="radio" name="c" id="allot" checked="checked" value="0"></td>
+    <td><input type="radio" name="c" id="transfer" value="1"></td>
+    <td><input type="radio" name="c" id="allot" checked="checked" value="2"></td>
+    <td><input type="radio" name="c" id="transfer" value="3"></td>
+    <td><input type="radio" name="c" id="allot" checked="checked" value="4"></td>
+    <td><input type="radio" name="c" id="transfer" value="5"></td>
+    
+  </tr>
+  
+  </table>
+</div>
+<div id="fPassport" style="display: none">
+  <table>
+  <tr>
+    <th>Diminished</th>
+    <th>Impaired</th>
+    <th>Intact</th>
+  </tr>
+  <tr>
+    <td><input type="radio" name="c" id="allot" checked="checked" value="Diminished"></td>
+    <td><input type="radio" name="c" id="transfer" value="Impaired"></td>
+    <td><input type="radio" name="c" id="allot" checked="checked" value="Intact"></td>
+  </tr>
+  
+  </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <button type="submit"  value="Submit">Submit</button>
   </form>
+
+<hr>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="inputEmail4">Sciatic</label>
+      <input type="text" name="Thoracic_Spine" class="form-control" id="inputEmail4" placeholder="">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label for="inputAddres">Tibial</label>
+  <input type="text" name="Tibial" class="form-control" id="inputAddres" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddress2">Sural</label>
+  <input type="text"name="Sural" class="form-control" id="inputAddress2" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddres">Common peroneal</label>
+  <input type="text" name="Common_peroneal" class="form-control" id="inputAddres" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddress2">Femoral</label>
+  <input type="text"name="Femoral" class="form-control" id="inputAddress2" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddres">Saphenous</label>
+  <input type="text" name="Saphenous" class="form-control" id="inputAddres" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddress2">Other</label>
+  <input type="text"name="Other" class="form-control" id="inputAddress2" placeholder="">
+</div>
+
+</div>
+
+<hr>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="inputEmail4">Previous medication</label>
+      <input type="text" name="Previous_medication" class="form-control" id="inputEmail4" placeholder="">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label for="inputAddres">Co-morbidity</label>
+  <input type="text" name="Co_morbidity" class="form-control" id="inputAddres" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddress2">Previous physiotherapy</label>
+  <input type="text"name="Previous_physiotherapy" class="form-control" id="inputAddress2" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddres">Surgery/Trauma</label>
+  <input type="text" name="Surgery_Trauma" class="form-control" id="inputAddres" placeholder="">
+</div>
+<div class="form-group">
+<select id="pinti" name="aoption">
+  <option  value="Please select">X-ray</option>
+  <option  value="Gluteus Medius">MRI</option>  
+  <option  value="Gluteus Maximus">CT</option>
+</select>
+</div>
+<div class="form-group">
+  <label for="inputAddres">Previous Diagnosis</label>
+  <input type="checkbox" id="vehicle1" name="Previous_Diagnosis" value="Bike">
+</div>
+
+</div>
+
+
+<hr>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="inputEmail4">Stretching</label>
+      <input type="text" name="Previous_medication" class="form-control" id="inputEmail4" placeholder="">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label for="inputAddres">Strengthening</label>
+  <input type="text" name="Strengthening" class="form-control" id="inputAddres" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddress2">Neural_mechanics</label>
+  <input type="text"name="Neural_mechanics" class="form-control" id="inputAddress2" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddres">Mechanical Correction</label>
+  <input type="text" name="Mechanical_Correction" class="form-control" id="inputAddres" placeholder="">
+</div>
+
+<div class="form-group">
+  <label for="inputAddres">Structural Management</label>
+  <input type="text" name="Structural_Management" class="form-control" id="inputAddres" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddres">Stabilization</label>
+  <input type="text" name="Stabilization" class="form-control" id="inputAddres" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddres">Maintenance</label>
+  <input type="text" name="Maintenance" class="form-control" id="inputAddres" placeholder="">
+</div>
+<div class="form-group">
+  <label for="inputAddres">Others</label>
+  <input type="text" name="Others_1" class="form-control" id="inputAddres" placeholder="">
+</div>
+
+</div>
+
+
   
   </body>
   </html>
@@ -589,6 +783,43 @@
   
       
       });
+
+
+      $("#gPassport").change(function () {
+              if ($(this).val() == "L2") {
+                  $("#hPassport").show();
+          
+              
+              } 
+              else if ($(this).val() == "L3") {
+                  $("#hPassport").show();
+              
+                  
+              }
+              else if ($(this).val() == "L4") {
+                  $("#hPassport").show();
+                  
+              }
+              else if ($(this).val() == "L5") {
+                  $("#hPassport").show();
+                  
+              }
+              else if ($(this).val() == "S1") {
+                  $("#hPassport").show();
+              
+              }
+          });
+
+          $('input:radio[name=S]').change(function() {
+          if (this.value == 'Sensory') {
+            $("#fPassport").hide();
+              $("#ePassport").show();
+          }
+          else if (this.value == 'Motor') {
+            $("#ePassport").hide();
+              $("#fPassport").show();
+          }
+      });
       
   </script>
   
@@ -632,5 +863,17 @@
   button{
   margin-top:30px;
   }
+
+  hr {
+  display: block;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border: 1px solid blueviolet;
+
+}
   
   </style>

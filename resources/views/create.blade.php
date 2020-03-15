@@ -8,6 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
 </head>
 <body>
 
@@ -22,7 +23,7 @@
       </div>
       <div class="form-group col-md-6">
         <label for="inputPassword4">Date of Assessment</label>
-        <input type="text" name="Date_of_Assessment" class="form-control" id="inputPassword4" placeholder="">
+        <input name="Date_of_Assessment" class="form-control" id="datetimepicker" type="text">
       </div>
     </div>
     <div class="form-row">
@@ -371,3 +372,13 @@ margin-top:30px;
 }
 
 </style>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+<script src="http://cdn.craig.is/js/rainbow-custom.min.js"></script>
+<script>
+      $(document).ready(function() {
+        	$.datetimepicker.setLocale('en');
+       	$('#datetimepicker').datetimepicker();
+      });
+</script>
